@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Steganography Using LSB Method</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Steganography Using LSB Method</h1>
+
+    <div class="encode">
+      <h2>Encode Data into Image</h2>
+      <input type="file" id="inputImage" accept="image/*" />
+      <textarea id="message" placeholder="Enter secret message here..." rows="4" cols="50"></textarea>
+      <button onclick="encodeMessage()">Encode and Download Image</button>
+    </div>
+
+    <div class="decode">
+      <h2>Decode Data from Image</h2>
+      <input type="file" id="decodeImage" accept="image/*" />
+      <button onclick="decodeMessage()">Decode Message</button>
+      <p id="decodedMessage"></p>
+    </div>
+  </div>
+
+  <script src="backend.js"></script>
+</body>
+</html>
